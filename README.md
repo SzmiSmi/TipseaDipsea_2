@@ -1,5 +1,10 @@
 # Project Description: Tipsea Dipsea
 
+The project endeavours to harness the profound impact of music-induced movement to combat the motor degeneration associated with Parkinson's, while also assessing the effectiveness of innovative treatment methodologies to reveal new insights about disease progression.
+
+In our quest to provide relief from the physical and mental challenges of Parkinson's, we chose to set the game in an under-the-sea immersive virtual reality (VR) environment. Players encounter a stream of fishes synchronized with background music, aiming to catch them for points whilst engaging in the Stroop Task – the gold standard cognitive training and assessment tool for Parkinson’s. This gamified approach offers patients an engaging alternative to traditional exercise routines, fostering motivation and enjoyment.
+
+Research highlights the pivotal role of movement and exercise in preserving dopamine neurons in Parkinson's, with dance therapies emerging as particularly effective interventions exhibiting heightened functional connectivity in cortico-striatal pathways, along with improvements in neuroplasticity and motor regions. A key focus of the project is the investigation of the "groove response," a phenomenon observed in the motor cortico-striatal loop, which triggers movement in response to specific musical rhythms. Music with groove properties facilitates precise movement synchronization, improving gait initiation, walking speed, and attention span, while alleviating freezing and rigidity symptoms. The VR environment enables the tracking of patient movements and the collection of valuable data on movement pathology, contributing to a deeper understanding of disease progression and treatment responses.
 
 
 # Technologies/Features used
