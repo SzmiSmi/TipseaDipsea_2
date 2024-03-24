@@ -13,6 +13,9 @@ public class SpawnFish : MonoBehaviour
     private float timer = 0.0f;
     private float spawnRate;
     public float bpm = 105.0f;
+
+    public AudioSource positiveSound;
+    public AudioClip positiveSoundClip;
     
     void Start()
     {
@@ -37,6 +40,8 @@ public class SpawnFish : MonoBehaviour
             {
                 swimControl.SetTarget(target);
                 swimControl.SetBpm(bpm);
+                swimControl.SetAudioSource(positiveSound);
+                swimControl.SetAudioClip(positiveSoundClip);
             }
             timer = 0;
         }
