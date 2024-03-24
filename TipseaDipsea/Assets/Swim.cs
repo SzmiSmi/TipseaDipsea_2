@@ -14,8 +14,7 @@ public class Swim : MonoBehaviour
     //Used to destroy fish after it passes player
     private float deadZone = -25f;
 
-    private AudioSource audioSource;
-    private AudioClip audioClip;
+
 
 
 
@@ -29,14 +28,7 @@ public class Swim : MonoBehaviour
     {
         bpm = newBpm;
     }
-    public void SetAudioSource(AudioSource newAudioSource)
-    {
-        audioSource = newAudioSource;
-    }
-    public void SetAudioClip(AudioClip newAudioClip)
-    {
-        audioClip = newAudioClip;
-    }
+   
 
 
     // Start is called before the first frame update
@@ -63,7 +55,6 @@ public class Swim : MonoBehaviour
         }
         
         if(transform.position.z<deadZone){
-            audioSource.PlayOneShot(audioClip);
             Destroy(gameObject);
         }
     }

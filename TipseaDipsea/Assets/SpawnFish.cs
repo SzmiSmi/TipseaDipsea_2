@@ -36,12 +36,13 @@ public class SpawnFish : MonoBehaviour
         {
             GameObject fish = Instantiate(fishPrefab, transform.position, lookRotation);
             Swim swimControl = fish.GetComponent<Swim>();
+            OnCollision collisionControl = fish.GetComponent<OnCollision>();
             if(swimControl!= null) 
             {
                 swimControl.SetTarget(target);
                 swimControl.SetBpm(bpm);
-                swimControl.SetAudioSource(positiveSound);
-                swimControl.SetAudioClip(positiveSoundClip);
+                collisionControl.SetAudioSource(positiveSound);
+                collisionControl.SetAudioClip(positiveSoundClip);
             }
             timer = 0;
         }
