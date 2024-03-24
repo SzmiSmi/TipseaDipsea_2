@@ -21,11 +21,11 @@ public class OnCollision : MonoBehaviour
     }
     private void OnTriggerEnter(Collider collision)
     {
-
-        Debug.Log("fish slapped by "+collision.gameObject.name);
-        audioSource.PlayOneShot(audioClip);
-        Destroy(gameObject);
-        
+        if(collision.name == "OculusHand_R" ||collision.name == "OculusHand_L" ){
+            Debug.Log("fish slapped by "+collision.gameObject.name);
+            audioSource.PlayOneShot(audioClip);
+            Destroy(gameObject);
+        }   
     }
     // Update is called once per frame
     void Update()
