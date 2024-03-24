@@ -14,7 +14,8 @@ public class Swim : MonoBehaviour
     //Used to destroy fish after it passes player
     private float deadZone = -25f;
 
-
+    public Color[] colors = new Color[5];
+    private Material fishMaterial;
 
 
 
@@ -34,6 +35,16 @@ public class Swim : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        colors[0] = Color.red;
+        colors[1] = Color.green;
+        colors[2] = Color.blue;
+        colors[3] = Color.yellow;
+        colors[4] = Color.black;
+        fishMaterial = GetComponent<Renderer>().material;
+
+        ChangeColor();
+
+
         if(target!= null)
         {
             moveDirection = (target.transform.position - transform.position).normalized;
@@ -43,7 +54,13 @@ public class Swim : MonoBehaviour
         }
         GetComponent<Rigidbody>().useGravity = false;
         speed = 50*bpm/240;
+        
 
+    }
+    void ChangeColor()
+    {
+        Color newColor = colors[Random.Range(0, colors.Length)]; // Pick a random color
+        fishMaterial.color = newColor; // Set the fish's color to the new random color
     }
 
     // Update is called once per frame
